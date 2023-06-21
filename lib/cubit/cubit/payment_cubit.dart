@@ -44,12 +44,7 @@ class PaymentCubit extends Cubit<PaymentState> {
         "description": "Smart Watch",
         "quantity": "1"
     },
-    { 
-        "name": "ERT6565",
-        "amount_cents": "200",
-        "description": "Power Bank",
-        "quantity": "1"
-    }
+   
       ],
     }).then((value) {
       NetworkConstants.paymentOrderID = value.data['id'].toString();
